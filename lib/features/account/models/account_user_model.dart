@@ -1,4 +1,4 @@
-class CreateAccountModel {
+class AccountUserModel {
   final String email;
   final String password;
   final String firstName;
@@ -7,7 +7,7 @@ class CreateAccountModel {
   final String? suffix;
   final DateTime? birthday;
 
-  CreateAccountModel({
+  AccountUserModel({
     required this.email,
     required this.password,
     required this.firstName,

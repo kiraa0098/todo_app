@@ -4,7 +4,7 @@ import 'package:todo_app/common/widgets/fields/password_field.dart';
 import 'package:todo_app/common/widgets/fields/text_input_field.dart';
 import 'package:todo_app/common/widgets/snackbar/floating_snackbar.dart';
 import 'package:todo_app/features/account/api/account_api.dart';
-import 'package:todo_app/features/account/models/create_account_model.dart';
+import 'package:todo_app/features/account/models/account_user_model.dart';
 
 void showFloatingSnackbar(
   BuildContext context,
@@ -55,7 +55,7 @@ class _AccountCreationFormState extends State<AccountCreationForm> {
       _responseMessage = null;
     });
 
-    final createAccountModel = CreateAccountModel(
+    final createAccountModel = AccountUserModel(
       email: _emailController.text,
       password: _passwordController.text,
       firstName: _firstNameController.text,
